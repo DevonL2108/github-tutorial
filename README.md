@@ -60,8 +60,20 @@ git push -u origin master
 
 ---
 ## Workflow & Commands
+* While working on your Git project, it is important to do `git status` from time to time.
+   * `git status` tells you the last changes you made. It tells you what is going on and what files are added to the stage and what aren't. It will also give you helpful commands like if you want to undo an edit or unadd something to the stage. Overall, this command is very useful throughout your workflow in Git. 
 
-
+These are other common commands you would use throughout your workflow:
+  
+* If you are editing any files and want to add it to the stage to push it to GitHub, you'll use `git add`.  
+  
+* If you want to create a version of your code and go back to it from time to time you would use `git commit -m "<commit message>"`.
+  
+* If you want to push a version of your code to GitHub you would use `git push` (You may only use this command after you set up a remote in GitHub and made it your upstream).
 
 ---
 ## Rolling Back Changes
+Throughout your workflow, sometimes you'll want to undo an edit, add, commit or push. Here's how you would do it:
+
+* Lets say you edited a file and want to undo the edit you made in that file, you would do `git checkout -- <filename>`
+  * 
