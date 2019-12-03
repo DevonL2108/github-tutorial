@@ -75,5 +75,22 @@ These are other common commands you would use throughout your workflow:
 ## Rolling Back Changes
 Throughout your workflow, sometimes you'll want to undo an edit, add, commit or push. Here's how you would do it:
 
-* Lets say you edited a file and want to undo the edit you made in that file, you would do `git checkout -- <filename>`
-  * 
+* Lets say you edited a file and want to undo the edit you made in that file, you would do `git checkout -- <file name>`.
+  * `git checkout -- <file name>` undo edits you've done to your file. You can only use this command if you made an edit to your file. You can also find this command by using the command `git status` when you make an edit to the file or add it to the stage.
+
+* If you edited a file and add it to the stage, but now you want to rollback the add, you would do `git reset HEAD <file name>`.
+  * `git reset HEAD <file name>` removes a file off the stage. You can only do this command if you have a file added to the stage. 
+  
+* Now if you want to undo a commit there are multiple ways to do it: (These commands can only be used after you do a commit)
+  * If you want to undo a commit only just type in `git reset --soft HEAD~1`.
+  * If you want to undo a commit and unadd it to the stage you would type `git reset HEAD~1`.
+  * If you want to undo a commit, add and edit you would type `git reset --hard HEAD~1`.  
+
+* Undoing a pushed commit requires more steps though. 
+  1. Use the command `git log` to get the commit **_sha_** then click **q** to quit.
+      * `git log` shows you the past commits you made. You can use this command after you `git init` and made some commits already.
+      * **_sha_** is a unique ID that keeps record of what changes were made when and by who. An example of a _**sha**_ would look like this: a867b4af
+        * The "a" stands for the most recent commit. Where "b" would stand for the commit before that and etc.
+  2. Then you would do `git reset --hard <sha>`.
+      * `git reset --hard <sha>` will re-write the history and even remove the commits from the remote.
+  
