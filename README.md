@@ -35,11 +35,11 @@ _by Devon Lum_
 
 ---
 ## Repository Setup
-After you have setup your GitHub account and IDE you are ready to make your first repository.  
-1. Go to your IDE and create a new directory `mkdir <file name>`
+After you have setup your GitHub account and IDE, you are ready to make your first repository.  
+1. Go to your IDE and create a new directory using `mkdir <file name>`
 2. Cd into your new directory and type `git init`
    * `git init` changes your directory into a repository and creates a hidden _.git_ folder in the repository. It's like hiring a "photographer" but didn't add anything to the stage to take a photo of. To do `git init` you must create a new directory first and cd into it in order to do the command. **Don't do `git init` in the root directory.**
-3. After you do `git init` add some files into the repository and modify them. Then, you would do `git add .` or `git add <file name>`
+3. After you do `git init`, add some files into the repository and modify them. Then, you would do `git add .` to add all the files within your repository or `git add <file name>` to add a specific file in your repository.
    * `git add` is getting files ready to be committed. It's like adding files to the stage, but didn't take a picture of it. You can only use this command if you created something new or modified anything in the repository.
 4. After you did `git add` you would do `git commit -m "<commit message>"`
    * `git commit -m "<commit message>"` is committing everything you added on to the stage and creates a version history of your code. The concept is like after you added files onto the stage, you would then take a picture of the code and store it in your memory. The `m "<commit message>"` is an organized way to store your code. Your commit message shouldn't be too lengthy and tells exactly what you did or changed in that version of your code. It should also be in present tense. You're only able to use this command after you added files to the stage.
