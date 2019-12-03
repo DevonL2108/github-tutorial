@@ -36,11 +36,12 @@ _by Devon Lum_
 ---
 ## Repository Setup
 After you have setup your GitHub account and IDE, you are ready to make your first repository.  
-1. Go to your IDE and create a new directory using `mkdir <file name>`
+1. Go to your [IDE](https://ide.cs50.io/) and create a new directory using `mkdir <file name>`
 2. Cd into your new directory and type `git init`
    * `git init` changes your directory into a repository and creates a hidden _.git_ folder in the repository. It's like hiring a "photographer" but didn't add anything to the stage to take a photo of. To do `git init` you must create a new directory first and cd into it in order to do the command. **Don't do `git init` in the root directory.**
-3. After you do `git init`, add some files into the repository and modify them. Then, you would do `git add .` to add all the files within your repository or `git add <file name>` to add a specific file in your repository.
+3. After you do `git init`, add some files into the repository and modify them by doing `touch <file name>` to make files and `c9 <file name>` to go into or access the files. Then, you would do `git add .` to add all the files within your repository or `git add <file name>` to add a specific file in your repository.
    * `git add` is getting files ready to be committed. It's like adding files to the stage, but didn't take a picture of it. You can only use this command if you created something new or modified anything in the repository.
+   * **Note**: if you want to create a text file and edit on it the file name should end in _.txt_ or it can be a _README.md_.
 4. After you did `git add` you would do `git commit -m "<commit message>"`
    * `git commit -m "<commit message>"` is committing everything you added on to the stage and creates a version history of your code. The concept is like after you added files onto the stage, you would then take a picture of the code and store it in your memory. The `m "<commit message>"` is an organized way to store your code. Your commit message shouldn't be too lengthy and tells exactly what you did or changed in that version of your code. It should also be in present tense. You're only able to use this command after you added files to the stage.
 5. Now you would go to your GitHub account, click the **+** icon at the top right of your screen next to your profile picture and click **New repository**. Where you see **Repository name**, type in **exactly** what you named your directory in step 1. Then click **Create repository**. 
@@ -93,4 +94,5 @@ Throughout your workflow, sometimes you'll want to undo an edit, add, commit or 
         * The "a" stands for the most recent commit. Where "b" would stand for the commit before that and etc.
   2. Then you would do `git reset --hard <sha>`.
       * `git reset --hard <sha>` will re-write the history and even remove the commits from the remote.
+  
   
