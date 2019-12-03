@@ -75,7 +75,7 @@ These are other common commands you would use throughout your workflow:
 ## Rolling Back Changes
 Throughout your workflow, sometimes you'll want to undo an edit, add, commit or push. Here's how you would do it:
 
-* Lets say you edited a file and want to undo the edit you made in that file, you would do `git checkout -- <file name>`.
+* Let's say you edited a file and want to undo the edit you made in that file, you would do `git checkout -- <file name>`.
   * `git checkout -- <file name>` undo edits you've done to your file. You can only use this command if you made an edit to your file. You can also find this command by using the command `git status` when you make an edit to the file or add it to the stage.
 
 * If you edited a file and add it to the stage, but now you want to rollback the add, you would do `git reset HEAD <file name>`.
