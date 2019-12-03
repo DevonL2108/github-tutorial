@@ -51,7 +51,7 @@ git push -u origin master
 ```
 7. Copy and paste the first command into the command line of the repository that you cd into in step 2 and click enter. 
    * `git remote add origin <URL>` will create a remote/url for the repository to go to. In order to use this command, you must've already created a repository.
-     * `remote` is like building a bridge to a destination, in which this case the destination is the URL or the name of your repository.
+     * `remote` is like building a bridge to a destination, in this case the destination is the URL or the name of your repository.
      * `origin` is the name of your repository. 
 8. Copy and paste the second command into the command line of the repository that you cd into in step 2 and click enter.
    * `git push -u origin master` will push your commits to GitHub and will remember where you want to push to from now on. After you do this command, you can just do `git push` from now on. You can only do this command after you set up a remote.
